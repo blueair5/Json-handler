@@ -2,6 +2,7 @@ package org.example;
 
 import com.alibaba.fastjson2.JSONObject;
 import org.example.util.CheckValidUtil;
+import org.example.util.ConcatJsonUtil;
 import org.example.util.FileReaderUtil;
 
 import java.util.Arrays;
@@ -32,6 +33,7 @@ public class HandlerJaon {
 
             JSONObject data = CheckValidUtil.checkValid(part1, part2);
             // 为 Json data 拼接数据
+            ConcatJsonUtil.ConcatJson(part1, data);
             
             
         }
